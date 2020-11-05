@@ -62,37 +62,32 @@
         <h1> brighter bottles, brighter future</h1>
         <h2> how we're taking responsibility for our packaging at innocent</h2>
         <p class="lead text-muted">Our mission has always been, and always will be, getting healthy drinks to people to help them live well and die old. At the moment, plastic bottles are the most sustainable way of doing that. We're on the case for making sure that plastic is treated in the right way so it has much less impact on the environment.</p>
-        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-blue">Recycle Information</button>
 
-        <div id="id01" class="w3-modal">
-          <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-            <header class="w3-container w3-blue">
-              <span onclick="document.getElementById('id01').style.display='none'"
-              class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
-              <h2>Recycle Information</h2>
-            </header>
 
-            <div class="w3-bar w3-border-bottom">
-              <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'London')">How to Recycle</button>
-              <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Paris')">Where to Recycle</button>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Recycling Revolution</button>
 
-            </div>
-
-            <div id="London" class="w3-container city">
-              <h1>London</h1>
-              <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-
-            <div id="Paris" class="w3-container city">
-              <h1>Paris</h1>
-              <p>Paris is the capital of France.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-
-            <div class="w3-container w3-light-grey w3-padding">
-              <button class="w3-button w3-right w3-white w3-border"
-              onclick="document.getElementById('id01').style.display='none'">Close</button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Recycling Revolution</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div id="content">
+                    <p><strong>rinse, recycle, repeat</strong></p>
+                  </div>
+                  <p>We wouldn't be able to have any recycled plastic in our packaging if people didn't recycle stuff in the first place. All of our packaging is 100% recyclable, unfortunately, not all councils recycle everything. You can find out if yours does by visiting Recycle Now. You can also use the same site to find your nearest recycling bank. If your council doesn't, get in touch and pester them. If enough people do it, they'll listen.</p>
+                  <img src="images/recycle.png" alt="Innocent Recycled bottles">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Close</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

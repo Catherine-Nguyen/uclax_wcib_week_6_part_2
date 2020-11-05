@@ -101,18 +101,6 @@ body {
   background-color: #E4F2E6;
 }
 
-.hero-image {
-  display: block;
-  margin: auto;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  min-height: 55%;
-  min-width: 55%;
-  object-fit: cover;
-}
-
 img {
   box-shadow: 10px 10px 5px #ccc;
   -moz-border-radius:25px;
@@ -125,4 +113,8 @@ img {
   -moz-border-radius:0px !important;
   -webkit-border-radius:0px !important;
   border-radius:0px !important;
+}
+
+#content p {
+  font-size: 50px !important;
 }
