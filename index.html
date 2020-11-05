@@ -1,26 +1,190 @@
 <!doctype html>
 <html class="" lang="en">
 
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <title>Week 6, Part 1</title>
+  <title>Week 6, Part 1</title>
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
 
-  <body>
+<body>
 
-    <h1>Week 6, Part 1</h1>
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">Hello, we're innocent</h4>
+            <p class="text-muted">…and we're here to make it easy for people to do themselves some good (whilst making it taste nice too). We started innocent in 1999 after selling our smoothies at a music festival. We put up a big sign asking people if they thought we should give up our jobs to make smoothies, and put a bin saying 'Yes' and a bin saying 'No" in front of the stall. Then we got people to vote with their empties. At the end of the weekend, the 'Yes' bin was full, so we resigned from our jobs the next day and got cracking.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Follow on Twitter</a></li>
+              <li><a href="#" class="text-white">Like on Facebook</a></li>
+              <li><a href="#" class="text-white">Email me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <div id="content">
+            <img src="images/face.png" alt="Innocent Logo" width="65" height="90" alt="Responsive image">
+          </div>
+          <strong> &nbsp; innocent</stong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-	</body>
+  <main role="main">
+    <section class="jumbotron text-center">
+      <img class="" src="images/innocent10.png" alt="Innocent Recycled bottles">
+      <br>
+      <br>
+      <div class="w3-container">
+        <h1> brighter bottles, brighter future</h1>
+        <h2> how we're taking responsibility for our packaging at innocent</h2>
+        <p class="lead text-muted">Our mission has always been, and always will be, getting healthy drinks to people to help them live well and die old. At the moment, plastic bottles are the most sustainable way of doing that. We're on the case for making sure that plastic is treated in the right way so it has much less impact on the environment.</p>
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-blue">Recycle Information</button>
+
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+            <header class="w3-container w3-blue">
+              <span onclick="document.getElementById('id01').style.display='none'"
+              class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+              <h2>Recycle Information</h2>
+            </header>
+
+            <div class="w3-bar w3-border-bottom">
+              <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'London')">How to Recycle</button>
+              <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Paris')">Where to Recycle</button>
+
+            </div>
+
+            <div id="London" class="w3-container city">
+              <h1>London</h1>
+              <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div id="Paris" class="w3-container city">
+              <h1>Paris</h1>
+              <p>Paris is the capital of France.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="w3-container w3-light-grey w3-padding">
+              <button class="w3-button w3-right w3-white w3-border"
+              onclick="document.getElementById('id01').style.display='none'">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <hr class="featurette-divider">
+
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="images/icon1.gif" alt="Innocent Recycled bottles" width="140" height="140" class="bd-placeholder-img rounded-circle">
+          <h2>our brighter bottle</h2>
+          <p class="lead">We’ve created an extra special bottle for our smoothies. It’s made from 50% recycled plastic and 15% plant plastic. By 2025, we plan to make all of our bottles out of 100% renewable stuff. We're already well on the way, so watch this space.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="images/icon2.gif" alt="Innocent Recycled bottles" width="140" height="140" class="bd-placeholder-img rounded-circle">
+          <h2>a recycling revolution</h2>
+          <p class="lead">We’re excited to announce that we're a founding member of a pioneering new plastic initiative led by an environmental charity called WRAP along with the Ellen MacArthur foundation. It's all about being part of the recycling revolution.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="images/icon3.gif" alt="Innocent Recycled bottles" width="140" height="140" class="bd-placeholder-img rounded-circle">
+          <h2>the story so far</h2>
+          <p class="lead">We’ve been front and centre of the recycling movement since we started using recycled plastic in our bottles 15 years ago. Every single thing we make is 100% recyclable and we’re encouraging everyone that drinks our drinks to recycle every bottle, every time.</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Innocent plus. <span class="text-muted">It’ll blow your mind.</span></h2>
+          <p class="lead">Our best-tasting rainbow of blends boosted with vitamins to keep your body feeling tip-top. Made from a juicy blend of raspberries and cherries and boosted with goji berries & vitamins, it’ll help you go out there and give it everything you’ve got. Get ready to be the new Where’s Wally of the hide and seek circuit.</p>
+          <p>
+            <a href="https://www.innocentdrinks.co.uk/things-we-make/juices/innocent-plus" class="btn btn-primary my-2" target="_blank">Shop Now</a>
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img src="images/innocent3.jpg" alt="Innocent Product" class="img-fluid" width="500" height="500">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Coconut water. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Innocent coconut water is 100% pure coconut water and absolutely nothing else. Well, we’ve cracked it. We’ve made a deliciously fresh-tasting coconut water that’s the perfect natural thirst quencher. Just 100% pure coconut water and nothing else. No concentrates, sweeteners or anything added whatsoever.</p>
+          <a href="https://www.innocentdrinks.co.uk/things-we-make/coconut-water" class="btn btn-primary my-2" target="_blank">Shop Now</a>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="images/innocent2.jpg" alt="Innocent Product" class="img-fluid" width="500" height="500">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Juice shots. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">A mighty blend of fruit, veg & vitamins that really packs a punch.  Armed with some sour cherries, raspberries, grapes and a few vitamins, they’ve managed to pack a lot of good stuff into a bottle that’s small enough to lose down the back of the sofa. Next time we’re packing for a two week camping trip in Dorset, we’ll know who to speak to.</p>
+          <a href="https://www.innocentdrinks.co.uk/things-we-make/innocent-shots-1" class="btn btn-primary my-2" target="_blank">Shop Now</a>
+        </div>
+        <div class="col-md-5">
+          <img src="images/innocent6.png" alt="Innocent Product" class="img-fluid" width="500" height="500">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+  </main>
+
+</body>
 
 </html>
