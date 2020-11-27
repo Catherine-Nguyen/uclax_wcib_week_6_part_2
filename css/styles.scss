@@ -125,3 +125,43 @@ img {
   font-size: 1.125rem !important;
   color: #00342E !important;
 }
+
+.btn-primary {
+    margin-left: 1rem;
+    background-color: #049DBF;
+    color: #E4F2E6;
+    border: 2px solid #049DBF;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #ccc;
+
+}
+  .btn-primary:hover {
+    background-color: #03658C;
+    color: #E4F2E6;
+    border-color: #03658C; }
+}
+
+.collapse {
+  background-color: #00342E;
+}
+
+.navbar-dark {
+  background-color: #00342E;
+}
+.font-color {
+  color: #00342E;
+}
+.pop-up {
+  box-shadow: 0px 0px 0px;
+  max-width: 50%;
+  max-height: auto;
+}
+
+.modal-margin {
+  margin: 20px;
+}
